@@ -58,4 +58,5 @@ async function loadDiagram() {
    const response = await fetch(`/save-diagram?id=${id}`);
    const json = await response.json();
    console.log(json);
+   diagramClear();
 }
